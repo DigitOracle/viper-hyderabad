@@ -355,6 +355,15 @@
         <span class="scope-tag">Utilities</span>
       </div>
 
+      <!-- devtools notice -->
+      <div style="margin-top:20px;border:1px solid rgba(25,10,70,0.15);padding:10px 14px;display:flex;align-items:flex-start;gap:10px;max-width:480px;">
+        <div style="width:3px;min-height:36px;background:var(--gold);flex-shrink:0;margin-top:2px;"></div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink);">Viewing Instructions</span>
+          <span style="font-family:var(--font-mono);font-size:9.5px;font-weight:500;color:var(--text-body);line-height:1.6;">This report is optimised for full-screen browser viewing. Developer tools must remain closed. If the screen goes dark, close any open browser inspection panels — press <strong>F12</strong> to toggle, or use the browser menu to close Developer Tools — then reload the page.</span>
+        </div>
+      </div>
+
     </div>
 
     <!-- RIGHT — metadata -->
@@ -1391,8 +1400,14 @@
   devBlock.id = 'devtools-block';
   devBlock.style.cssText = 'display:none;position:fixed;inset:0;z-index:9998;background:var(--ink);align-items:center;justify-content:center;flex-direction:column;gap:12px;';
   devBlock.innerHTML = `
-    <div style="font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:white;">Access Restricted</div>
-    <div style="font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;">Close developer tools to continue</div>`;
+    <video style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;" autoplay muted loop playsinline>
+      <source src="assets/bg-devtools.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;inset:0;z-index:1;background:rgba(25,10,70,0.85);"></div>
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:12px;">
+      <div style="font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:white;">Access Restricted</div>
+      <div style="font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;">Close developer tools to continue</div>
+    </div>`;
   document.body.appendChild(devBlock);
 
   function checkDevTools() {
