@@ -934,8 +934,143 @@
   </div>
 
 </section>
-<section class="slide slide-placeholder" id="s5" data-idx="4">
-  <p class="ph-label">Slide 5</p><p class="ph-title">VIPER® Sensor Register</p>
+<!-- ══ SLIDE 5 — VIPER® SENSOR REGISTER ══ -->
+<section class="slide" id="s5" data-idx="4" style="background:var(--white);overflow:hidden;display:flex;flex-direction:column;">
+
+  <video style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;" autoplay muted loop playsinline>
+    <source src="assets/bg-s5.mp4" type="video/mp4">
+  </video>
+  <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(255,255,255,0.97) 0%,rgba(255,255,255,0.93) 100%);"></div>
+
+  <div class="hero-topbar"></div>
+
+  <!-- slide header -->
+  <div style="position:relative;z-index:5;padding:18px 6vw 0 6vw;border-bottom:1px solid var(--smoke);">
+    <div style="display:flex;align-items:baseline;gap:16px;padding-bottom:14px;">
+      <span style="font-family:var(--font-mono);font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);">05 / 07</span>
+      <h2 style="font-family:var(--font-display);font-size:clamp(18px,2.2vw,26px);font-weight:800;color:var(--ink);letter-spacing:-0.02em;">VIPER® Sensor Register</h2>
+      <span style="font-family:var(--font-mono);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);">— Hyderabad ITS · Environmental Monitoring · Sample Output</span>
+    </div>
+  </div>
+
+  <!-- body -->
+  <div style="position:relative;z-index:5;flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 5vw;gap:18px;">
+
+    <!-- intro -->
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:3px;height:28px;background:var(--gold);flex-shrink:0;"></div>
+        <p style="font-family:var(--font-mono);font-size:11px;font-weight:500;color:var(--text-body);line-height:1.5;">
+          Each sensor is derived deterministically from the regulatory and standards inputs in Slide 2. Full register produced on engagement.
+        </p>
+      </div>
+      <div style="font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--gold);border:1px solid var(--gold);padding:4px 12px;white-space:nowrap;letter-spacing:0.08em;">SAMPLE OUTPUT</div>
+    </div>
+
+    <!-- register table -->
+    <div style="display:flex;flex-direction:column;border:1px solid var(--smoke);overflow:hidden;">
+
+      <!-- header row -->
+      <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;background:var(--ink);padding:10px 14px;gap:12px;">
+        <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">Sensor ID</span>
+        <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">Sensor Type</span>
+        <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">Parameter</span>
+        <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">Unit</span>
+        <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">Regulatory Basis</span>
+        <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">RIBA Φ</span>
+      </div>
+
+      <!-- ROW 1 — fully visible -->
+      <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;padding:11px 14px;gap:12px;border-bottom:1px solid var(--smoke);background:white;align-items:center;">
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">VPR-HYD-ENV-001</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);">PM2.5 Particulate Monitor</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);">PM2.5</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);">µg/m³</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);">IN-ICCC-2024 · IN-EPA-1986 · ISO 19156</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">Φ3 → Φ5</span>
+      </div>
+
+      <!-- ROW 2 — fully visible -->
+      <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;padding:11px 14px;gap:12px;border-bottom:1px solid var(--smoke);background:#fafafa;align-items:center;">
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">VPR-HYD-ENV-002</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);">PM10 Particulate Monitor</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);">PM10</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);">µg/m³</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);">IN-ICCC-2024 · IN-EPA-1986 · ISO 14001</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">Φ3 → Φ5</span>
+      </div>
+
+      <!-- ROWS 3–8 — redacted -->
+      <div style="position:relative;">
+        <!-- blurred rows -->
+        <div style="filter:blur(3px);pointer-events:none;user-select:none;">
+          <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;padding:11px 14px;gap:12px;border-bottom:1px solid var(--smoke);background:white;align-items:center;">
+            <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">VPR-HYD-ENV-003</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">NO₂ Electrochemical Sensor</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">NO₂</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">ppb</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">IN-EIA-2020 · IN-EPA-1986 · ITU-T Y.4100</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--ink);">Φ3 → Φ5</span>
+          </div>
+          <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;padding:11px 14px;gap:12px;border-bottom:1px solid var(--smoke);background:#fafafa;align-items:center;">
+            <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">VPR-HYD-ENV-004</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">Carbon Monoxide Sensor</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">CO</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">ppm</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">IN-EIA-2020 · ISO 14001 · IEEE 2888.1</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--ink);">Φ3 → Φ5</span>
+          </div>
+          <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;padding:11px 14px;gap:12px;border-bottom:1px solid var(--smoke);background:white;align-items:center;">
+            <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">VPR-HYD-ENV-005</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">Ambient Noise Monitor</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">Leq</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">dB(A)</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">IN-NBC-2016 · IN-EPA-1986 · ISO/IEC 30173</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--ink);">Φ3 → Φ5</span>
+          </div>
+          <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;padding:11px 14px;gap:12px;border-bottom:1px solid var(--smoke);background:#fafafa;align-items:center;">
+            <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">VPR-HYD-ENV-006</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">Traffic Noise Monitor</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">Leq</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">dB(A)</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">IN-NBC-2016 · IN-ICCC-2024 · ISO 37122</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--ink);">Φ4 → Φ5</span>
+          </div>
+          <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;padding:11px 14px;gap:12px;border-bottom:1px solid var(--smoke);background:white;align-items:center;">
+            <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">VPR-HYD-ENV-007</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">Meteorological Station</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">Temp / RH / Wind</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">°C / % / m/s</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">IN-SCM-2025 · ISO 37120 · ITU-T Y.4000</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--ink);">Φ3 → Φ7</span>
+          </div>
+          <div style="display:grid;grid-template-columns:160px 1fr 120px 100px 1fr 80px;padding:11px 14px;gap:12px;background:#fafafa;align-items:center;">
+            <span style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--ink);">VPR-HYD-ENV-008</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">UV Index Sensor</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">UVI</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">Index</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-body);">IN-SCM-2025 · ISO 37120 · IEC SRD 63302-1</span>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--ink);">Φ3 → Φ7</span>
+          </div>
+        </div>
+        <!-- redaction overlay -->
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.55);">
+          <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink);border:1.5px solid var(--ink);padding:6px 20px;background:white;">6 Further Sensors · Full Register on Engagement</div>
+        </div>
+      </div>
+
+    </div><!-- /table -->
+
+  </div><!-- /body -->
+
+  <!-- bottom strip -->
+  <div class="hero-bottom-strip">
+    <div class="strip-item">Slide 5 of 7 &nbsp;<span>VIPER® Sensor Register</span></div>
+    <div class="strip-item">Sensors Derived &nbsp;<span>8 Total · 2 Shown · 6 Redacted</span></div>
+    <div class="strip-item">Scope &nbsp;<span>Air Quality · Noise · Meteorological</span></div>
+    <div class="strip-item">DigitAlchemy® DTE v16.10 &nbsp;<span>ADGM · Sky Tower · Al Reem Island</span></div>
+  </div>
+
 </section>
 <section class="slide slide-placeholder" id="s6" data-idx="5">
   <p class="ph-label">Slide 6</p><p class="ph-title">Traceability Matrix</p>
