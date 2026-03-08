@@ -301,11 +301,13 @@
     <svg viewBox="0 0 16 16"><path d="M8 12 L8 4 M4 8 L8 4 L12 8"/></svg>
   </button>
   <div class="nav-dots">
-    <button class="nav-dot active" data-label="Overview"         data-idx="0" onclick="goToSlide(0)"></button>
-    <button class="nav-dot"        data-label="Regulatory Basis" data-idx="1" onclick="goToSlide(1)"></button>
-    <button class="nav-dot"        data-label="Sensor Register"  data-idx="2" onclick="goToSlide(2)"></button>
-    <button class="nav-dot"        data-label="Traceability"     data-idx="3" onclick="goToSlide(3)"></button>
-    <button class="nav-dot"        data-label="Platform Note"    data-idx="4" onclick="goToSlide(4)"></button>
+    <button class="nav-dot active" data-label="Overview"          data-idx="0" onclick="goToSlide(0)"></button>
+    <button class="nav-dot"        data-label="Regulatory Basis"  data-idx="1" onclick="goToSlide(1)"></button>
+    <button class="nav-dot"        data-label="RIBA Stage Map"    data-idx="2" onclick="goToSlide(2)"></button>
+    <button class="nav-dot"        data-label="VIPER® Pipeline"   data-idx="3" onclick="goToSlide(3)"></button>
+    <button class="nav-dot"        data-label="Sensor Register"   data-idx="4" onclick="goToSlide(4)"></button>
+    <button class="nav-dot"        data-label="Traceability"      data-idx="5" onclick="goToSlide(5)"></button>
+    <button class="nav-dot"        data-label="Platform Note"     data-idx="6" onclick="goToSlide(6)"></button>
   </div>
   <button class="nav-arrow" title="Next" onclick="navigateSection(1)">
     <svg viewBox="0 0 16 16"><path d="M8 4 L8 12 M4 8 L8 12 L12 8"/></svg>
@@ -602,14 +604,162 @@
   </div>
 
 </section>
-<section class="slide slide-placeholder" id="s3" data-idx="2">
-  <p class="ph-label">Slide 3</p><p class="ph-title">VIPER® Sensor Register</p>
+<!-- ══ SLIDE 3 — RIBA STAGE MAP ══ -->
+<section class="slide" id="s3" data-idx="2" style="background:var(--white);overflow:hidden;display:flex;flex-direction:column;">
+
+  <div class="hero-topbar"></div>
+
+  <!-- slide header -->
+  <div style="position:relative;z-index:5;padding:18px 6vw 0 6vw;border-bottom:1px solid var(--smoke);">
+    <div style="display:flex;align-items:baseline;gap:16px;padding-bottom:14px;">
+      <span style="font-family:var(--font-mono);font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);">03 / 07</span>
+      <h2 style="font-family:var(--font-display);font-size:clamp(18px,2.2vw,26px);font-weight:800;color:var(--ink);letter-spacing:-0.02em;">RIBA Stage Map</h2>
+      <span style="font-family:var(--font-mono);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);">— Periodichotomy® Φ0–Φ7 · Sensor Deployment Lifecycle</span>
+    </div>
+  </div>
+
+  <!-- body -->
+  <div style="position:relative;z-index:5;flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 5vw;gap:28px;">
+
+    <!-- intro line -->
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="width:3px;height:32px;background:var(--gold);flex-shrink:0;"></div>
+      <p style="font-family:var(--font-mono);font-size:12px;font-weight:500;color:var(--text-body);line-height:1.6;max-width:780px;">
+        VIPER® sensor requirements are traced across all eight RIBA project stages. Each stage governs <em>when</em> a regulatory obligation becomes a design input, a specification, or a deployed physical instance. Stages Φ2–Φ5 carry the highest sensor derivation density.
+      </p>
+    </div>
+
+    <!-- flow diagram -->
+    <div style="display:flex;align-items:stretch;gap:0;width:100%;">
+
+      <!-- Φ0 — muted -->
+      <div style="flex:1;display:flex;flex-direction:column;border:1px solid var(--smoke);border-right:none;padding:14px 10px 12px;background:#fafafa;position:relative;">
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.15em;font-weight:700;color:var(--text-muted);margin-bottom:6px;">Φ0</span>
+        <span style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--text-muted);line-height:1.2;margin-bottom:6px;">Strategic Definition</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-muted);line-height:1.4;">Business case · Project brief · Stakeholder alignment</span>
+        <div style="margin-top:10px;font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--text-muted);border-top:1px solid var(--smoke);padding-top:6px;">RIBA Stage 0</div>
+        <!-- arrow -->
+        <div style="position:absolute;right:-10px;top:50%;transform:translateY(-50%);z-index:2;width:20px;height:20px;display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,4 14,10 6,16" stroke="#ccc" stroke-width="1.5" fill="none"/></svg>
+        </div>
+      </div>
+
+      <!-- Φ1 — muted -->
+      <div style="flex:1;display:flex;flex-direction:column;border:1px solid var(--smoke);border-right:none;padding:14px 10px 12px;background:#fafafa;position:relative;">
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.15em;font-weight:700;color:var(--text-muted);margin-bottom:6px;">Φ1</span>
+        <span style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--text-muted);line-height:1.2;margin-bottom:6px;">Preparation & Brief</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-muted);line-height:1.4;">Regulatory scope defined · Jurisdiction confirmed</span>
+        <div style="margin-top:10px;font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--text-muted);border-top:1px solid var(--smoke);padding-top:6px;">RIBA Stage 1</div>
+        <div style="position:absolute;right:-10px;top:50%;transform:translateY(-50%);z-index:2;width:20px;height:20px;display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,4 14,10 6,16" stroke="#ccc" stroke-width="1.5" fill="none"/></svg>
+        </div>
+      </div>
+
+      <!-- Φ2 — ACTIVE -->
+      <div style="flex:1;display:flex;flex-direction:column;border:2px solid var(--ink);border-right:none;padding:14px 10px 12px;background:rgba(25,10,70,0.04);position:relative;">
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.15em;font-weight:700;color:var(--gold);margin-bottom:6px;">Φ2 ●</span>
+        <span style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--ink);line-height:1.2;margin-bottom:6px;">Concept Design</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);line-height:1.4;">Sensor strategy formed · Zone types mapped · Standards loaded</span>
+        <div style="margin-top:10px;font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--ink-mid);border-top:1px solid rgba(25,10,70,0.15);padding-top:6px;">RIBA Stage 2</div>
+        <div style="position:absolute;right:-11px;top:50%;transform:translateY(-50%);z-index:2;width:20px;height:20px;display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,4 14,10 6,16" stroke="var(--ink)" stroke-width="2" fill="none"/></svg>
+        </div>
+      </div>
+
+      <!-- Φ3 — ACTIVE -->
+      <div style="flex:1;display:flex;flex-direction:column;border:2px solid var(--ink);border-right:none;padding:14px 10px 12px;background:rgba(25,10,70,0.04);position:relative;">
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.15em;font-weight:700;color:var(--gold);margin-bottom:6px;">Φ3 ●</span>
+        <span style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--ink);line-height:1.2;margin-bottom:6px;">Spatial Coordination</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);line-height:1.4;">VIPER® derivation runs · Sensor register produced · DUID assigned</span>
+        <div style="margin-top:10px;font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--ink-mid);border-top:1px solid rgba(25,10,70,0.15);padding-top:6px;">RIBA Stage 3</div>
+        <div style="position:absolute;right:-11px;top:50%;transform:translateY(-50%);z-index:2;width:20px;height:20px;display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,4 14,10 6,16" stroke="var(--ink)" stroke-width="2" fill="none"/></svg>
+        </div>
+      </div>
+
+      <!-- Φ4 — ACTIVE (peak) -->
+      <div style="flex:1;display:flex;flex-direction:column;border:2px solid var(--gold);border-right:none;padding:14px 10px 12px;background:rgba(245,166,35,0.06);position:relative;">
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.15em;font-weight:700;color:var(--gold);margin-bottom:6px;">Φ4 ◆</span>
+        <span style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--ink);line-height:1.2;margin-bottom:6px;">Technical Design</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);line-height:1.4;">Procurement spec issued · Standards-justified tender package</span>
+        <div style="margin-top:10px;font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--gold);border-top:1px solid rgba(245,166,35,0.3);padding-top:6px;">RIBA Stage 4 · Peak Density</div>
+        <div style="position:absolute;right:-11px;top:50%;transform:translateY(-50%);z-index:2;width:20px;height:20px;display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,4 14,10 6,16" stroke="var(--gold)" stroke-width="2" fill="none"/></svg>
+        </div>
+      </div>
+
+      <!-- Φ5 — ACTIVE -->
+      <div style="flex:1;display:flex;flex-direction:column;border:2px solid var(--ink);border-right:none;padding:14px 10px 12px;background:rgba(25,10,70,0.04);position:relative;">
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.15em;font-weight:700;color:var(--gold);margin-bottom:6px;">Φ5 ●</span>
+        <span style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--ink);line-height:1.2;margin-bottom:6px;">Construction</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-body);line-height:1.4;">Physical deployment · Sensor commissioning · AAS envelopes live</span>
+        <div style="margin-top:10px;font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--ink-mid);border-top:1px solid rgba(25,10,70,0.15);padding-top:6px;">RIBA Stage 5</div>
+        <div style="position:absolute;right:-11px;top:50%;transform:translateY(-50%);z-index:2;width:20px;height:20px;display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,4 14,10 6,16" stroke="var(--ink)" stroke-width="2" fill="none"/></svg>
+        </div>
+      </div>
+
+      <!-- Φ6 — muted -->
+      <div style="flex:1;display:flex;flex-direction:column;border:1px solid var(--smoke);border-right:none;padding:14px 10px 12px;background:#fafafa;position:relative;">
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.15em;font-weight:700;color:var(--text-muted);margin-bottom:6px;">Φ6</span>
+        <span style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--text-muted);line-height:1.2;margin-bottom:6px;">Handover</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-muted);line-height:1.4;">COBie package · Digital thread closed · FM handover</span>
+        <div style="margin-top:10px;font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--text-muted);border-top:1px solid var(--smoke);padding-top:6px;">RIBA Stage 6</div>
+        <div style="position:absolute;right:-10px;top:50%;transform:translateY(-50%);z-index:2;width:20px;height:20px;display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polyline points="6,4 14,10 6,16" stroke="#ccc" stroke-width="1.5" fill="none"/></svg>
+        </div>
+      </div>
+
+      <!-- Φ7 — muted -->
+      <div style="flex:1;display:flex;flex-direction:column;border:1px solid var(--smoke);padding:14px 10px 12px;background:#fafafa;">
+        <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.15em;font-weight:700;color:var(--text-muted);margin-bottom:6px;">Φ7</span>
+        <span style="font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--text-muted);line-height:1.2;margin-bottom:6px;">In Use / Operate</span>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-muted);line-height:1.4;">Live telemetry · Drift monitoring · Ongoing compliance</span>
+        <div style="margin-top:10px;font-family:var(--font-mono);font-size:9px;font-weight:600;color:var(--text-muted);border-top:1px solid var(--smoke);padding-top:6px;">RIBA Stage 7</div>
+      </div>
+
+    </div><!-- /flow -->
+
+    <!-- legend -->
+    <div style="display:flex;align-items:center;gap:24px;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:12px;height:12px;border:2px solid var(--gold);background:rgba(245,166,35,0.06);"></div>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-muted);">Peak sensor derivation density</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:12px;height:12px;border:2px solid var(--ink);background:rgba(25,10,70,0.04);"></div>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-muted);">Active VIPER® stages</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:12px;height:12px;border:1px solid var(--smoke);background:#fafafa;"></div>
+        <span style="font-family:var(--font-mono);font-size:10px;font-weight:600;color:var(--text-muted);">Contextual / handover stages</span>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- bottom strip -->
+  <div class="hero-bottom-strip">
+    <div class="strip-item">Slide 3 of 7 &nbsp;<span>RIBA Stage Map</span></div>
+    <div class="strip-item">Framework &nbsp;<span>Periodichotomy® Φ0–Φ7 × RIBA Plan of Work 2020</span></div>
+    <div class="strip-item">Active Stages &nbsp;<span>Φ2 · Φ3 · Φ4 · Φ5</span></div>
+    <div class="strip-item">DigitAlchemy® DTE v16.10 &nbsp;<span>ADGM · Sky Tower · Al Reem Island</span></div>
+  </div>
+
 </section>
+
+<!-- ══ SLIDE 4 — VIPER® 14-LAYER PIPELINE (placeholder) ══ -->
 <section class="slide slide-placeholder" id="s4" data-idx="3">
-  <p class="ph-label">Slide 4</p><p class="ph-title">Traceability Matrix</p>
+  <p class="ph-label">Slide 4</p><p class="ph-title">VIPER® 14-Layer Pipeline</p>
 </section>
 <section class="slide slide-placeholder" id="s5" data-idx="4">
-  <p class="ph-label">Slide 5</p><p class="ph-title">Platform Note</p>
+  <p class="ph-label">Slide 5</p><p class="ph-title">VIPER® Sensor Register</p>
+</section>
+<section class="slide slide-placeholder" id="s6" data-idx="5">
+  <p class="ph-label">Slide 6</p><p class="ph-title">Traceability Matrix</p>
+</section>
+<section class="slide slide-placeholder" id="s7" data-idx="6">
+  <p class="ph-label">Slide 7</p><p class="ph-title">Platform Note</p>
 </section>
 
 <script>
